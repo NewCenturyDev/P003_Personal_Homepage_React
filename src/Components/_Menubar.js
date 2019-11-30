@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import { Image, Menu, Sidebar } from 'semantic-ui-react'
 
 const HeaderUnit = () => (
-    <Sidebar as={Menu}  animation='uncover' direction='left' vertical visible>
+    <Sidebar as={Menu} style={{width: 300}} animation='uncover' direction='left' vertical visible>
         <Menu.Item header>
             <Link to='/'>
                 <div style={{height: 50}}>
