@@ -89,7 +89,7 @@ class SCP_School extends Component {
                         <h2>프로젝트 중단</h2>
                         <Divider></Divider>
                         <p style={{margin: '0 25px'}}>
-                            당시 웹 프로그래밍 수업을 듣고 나서 이 프로젝트를 조금 더 개선하는 것을 검토한 적이 있었습니다.<br/>
+                            당시 웹 프로그래밍 수업을 듣고 나서 극초기 단계에 해당하는(사실상 HTML 껍데기에 JS로 약간의 기능만 구현한 상태인) 이 프로젝트를 조금 더 개선하는 것을 검토한 적이 있었습니다.<br/>
                             다음과 같은 개선 사항을 생각했었습니다.<br/>
                         </p>
                         <h3>검토하였던 프로젝트 개선 방안</h3>
@@ -109,7 +109,7 @@ class SCP_School extends Component {
                             <li>마지막으로, 이 프로젝트의 타겟인 학과의 1학년 후배들은 본 프로젝트가 활성화, 상용화되기 보다는
                                 그냥 자신들이 구글링하는 것을 더 선호하였음.
                             </li>
-                            <li><del>기획이 망했어요.</del></li>
+                            <li><del>한줄요약: 레이아웃 구현해놓고 보니 기획이 망했어요.</del></li>
                         </ul>
                     </Grid.Column>
                     <Grid.Column className='grid_block'>

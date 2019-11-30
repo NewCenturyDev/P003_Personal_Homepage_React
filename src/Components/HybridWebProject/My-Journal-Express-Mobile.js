@@ -10,8 +10,7 @@ class My_Journals_Express_Mobile extends Component {
         window.open("https://github.com/HyperTech99/My-Journal-Express-Mobile/");
     }
     handleImg = (num) => {
-        let img = ["HybridWebProject/My-Journal-Express-Mobile/1.png",
-        "HybridWebProject/My-Journal-Express-Mobile/1.jpg",
+        let img = [ "HybridWebProject/My-Journal-Express-Mobile/1.jpg",
         "HybridWebProject/My-Journal-Express-Mobile/2.jpg",
         "HybridWebProject/My-Journal-Express-Mobile/3.jpg",
         "HybridWebProject/My-Journal-Express-Mobile/4.jpg",
@@ -19,7 +18,7 @@ class My_Journals_Express_Mobile extends Component {
         "HybridWebProject/My-Journal-Express-Mobile/6.jpg",
         "HybridWebProject/My-Journal-Express-Mobile/7.jpg" ]
         this.setState({
-            imgSrc: img[num],
+            imgSrc: img[num - 1],
             activeItem: num
         });
     }
@@ -75,7 +74,7 @@ class My_Journals_Express_Mobile extends Component {
                         <Divider></Divider>
                         <h3>개요</h3>
                         <p style={{margin: '0 25px'}}>
-                            Frontend는 별도의 Web Page와 Android Application을 만들었습니다.<br/>
+                            Frontend는 별도의 Web Page와 Android Application으로 만들었습니다.<br/>
                             Backend는 기존 My-Journal-Express 웹 서버와 공용합니다.
                         </p>
                         <h3>Frontend</h3>

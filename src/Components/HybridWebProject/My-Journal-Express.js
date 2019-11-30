@@ -124,11 +124,11 @@ class My_Journals_Express extends Component {
                         <h3>부속 프로젝트 - [My-Journals-Mobile]</h3>
                         <p style={{margin: '0 25px'}}>
                         웹과 안드로이드를 조합하여 만든 Hybrid Application 입니다.<br/>
-                        원본 프로젝트의 경우 기본적인 UI 설계를 PC에 맞추어 하였습니다. (어느정도 반응형이 지원되기는 합니다)
+                        본 프로젝트002의 경우 기본적인 UI 설계를 PC에 맞추어 하였습니다. (어느정도 반응형이 지원되기는 합니다)
                         그래서 10인치 미만의 화면을 가진 모바일 기기에서는 본 웹 서비스를 이용하는데 있어 불편함이 있었습니다.
                         그러한 불편함의 해소를 위해 모바일 버전 웹 페이지와 그에 기반하는 모바일 어플리케이션을 만들었습니다.
                         모바일 어플리케이션(안드로이드)의 경우 별도의 Repository와 Project명을 가지고 진행하였습니다.
-                        자세한 내용은 My-Journals-Mobile 프로젝트를 참조해주세요.
+                        자세한 내용은 프로젝트003(My-Journals-Mobile)를 참조해주세요.
                         </p>
                     </Grid.Column>
                     <Grid.Column className='grid_block'>
