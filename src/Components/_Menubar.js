@@ -91,7 +91,7 @@ class HeaderUnit extends Component {
                     <Accordion.Content active={this.state.activeIndex === 3}>
                         <Link to='/etc1'><h5 style={{margin: '5px 10px', color: 'grey', hover:'black'}}>01 | (C)OSS-MineSweeper</h5></Link>
                         <Link to='/etc2'><h5 style={{margin: '5px 10px', color: 'grey', hover:'black'}}>02 | (C++)Jjapke-Mon</h5></Link>
-                        <Link to='/etc3'><h5 style={{margin: '5px 10px', color: 'grey', hover:'black'}}>03 | (JAVA)JjapluMarble</h5></Link>
+                        <Link to='/etc3'><h5 style={{margin: '5px 10px', color: 'grey', hover:'black'}}>03 | (JAVA)Jjaplu-Marble</h5></Link>
                     </Accordion.Content>
                 </Accordion>
             </Menu.Item>
