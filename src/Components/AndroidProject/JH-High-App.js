@@ -50,7 +50,7 @@ class JH_High_App extends Component {
                         </p>
                         <h3>Frontend</h3>
                         <ul>
-                            <li>Android FrameWork (JAVA)</li>
+                            <li>Android FrameWork (JAVA) - 사용자 조작에 반응하고, 페이지(액티비티)간 이동과 WebView를 통해 일부 컨텐츠는 학교 홈페이지의 것을 불러와 보여주는 데 사용했습니다.</li>
                         </ul>
                     </Grid.Column>
                 </Grid>

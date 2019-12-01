@@ -2,6 +2,7 @@
   "name": "ht99s-personal-web-page",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://htsv.ipdisk.co.kr:81/list/HDD1/",
   "dependencies": {
     "react": "^16.12.0",
     "react-app-polyfill": "^1.0.4",

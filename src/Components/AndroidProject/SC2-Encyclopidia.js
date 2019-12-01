@@ -60,7 +60,7 @@ class SC2_Encyclopidia extends Component {
                             <li>아케이드(유즈맵) 공략 - 나무위키 또는 각종 유즈맵 카페들 참조</li>
                             <li>실시간 제보 기능 - SC1의 경우 게임이 출시된 지 20년이 다 되어 변화가 거의 없으나, SC2의 경우 지금도 전략, 흔히 말하는 메타가 변하고 있음.</li>
                             <li>배틀넷 API 연동 - Battle.net 어플리케이션과 연동하여 채팅 등을 할 수 있게 함.</li>
-                            <li>등등...</li>
+                            <li>기타 필요하거나 추가하면 좋을 것 같다고 생각하는 기능</li>
                         </ul>
                     </Grid.Column>
                     <Grid.Column className='grid_block'>
@@ -68,14 +68,14 @@ class SC2_Encyclopidia extends Component {
                         <Divider></Divider>
                         <h3>개요</h3>
                         <p style={{margin: '0 25px'}}>
-                            아직 구상중인 프로젝트인 관계로 어떠한 기술을 사용하여 구현할지는 고민하고 있습니다.<br/>
+                            <b>아직 구상중인 프로젝트인 관계로 어떠한 기술을 사용하여 구현할지는 고민하고 있습니다.</b><br/>
                             일단 안드로이드 App 형태로는 필히 개발할 생각입니다.<br/>
                             Modern Web FrameWork를 통해 제작한 웹 App과 연동하여 Hybrid 형태로 갈 지, 순수 Android 형태의 Native로 갈 지 고민중입니다.<br/>
                         </p>
                         <h3>Frontend</h3>
                         <ul>
-                            <li>Android FrameWork (JAVA)</li>
-                            <li>Modern Web FrameWork (미정)</li>
+                            <li>Android FrameWork (JAVA) - 사용자 입력 처리 및 레이아웃 구현 및 동영상 iframe, 사진 등 컨텐츠를 보여주고 컨텐츠간 전환하는 데 사용</li>
+                            <li>Modern Web FrameWork (미정) - PC에서도 사용할 수 있게 만들 경우, Android Native App과 유사하게 기능 구현</li>
                         </ul>
                         <h3>Backend</h3>
                         <ul>
@@ -83,7 +83,7 @@ class SC2_Encyclopidia extends Component {
                         </ul>
                         <h3>DB</h3>
                         <ul>
-                            <li>MySQL</li>
+                            <li>MySQL - 각종 동영상 링크 및 사용자 파일 저장</li>
                         </ul>
                     </Grid.Column>
                     <Grid.Column className='grid_block'>

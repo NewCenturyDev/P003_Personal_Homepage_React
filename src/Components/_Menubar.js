@@ -26,7 +26,9 @@ class HeaderUnit extends Component {
         }
     }
     GotoFtpServer = () => {
-        window.open('http://htsv.ipdisk.co.kr:81/list/HDD1/Storage/');
+        
+        alert("보안 문제로 현재 개인 FTP 서버는 막아뒀습니다.");
+        //window.open('http://htsv.ipdisk.co.kr:81/list/HDD1/Storage/');
     }
     render() {
         return(
@@ -103,8 +105,8 @@ class HeaderUnit extends Component {
             </Menu.Item>
             <div style={{width: 295, bottom: 0, position: 'absolute', textAlign: 'center'}}>
                 <h5 style={{margin: 0}}>Dev. HyperTech99</h5>
-                <h5 style={{margin: 0}}>Version - 0.50</h5>
-                <h5 style={{margin: 0}}>Dec. 1. 2019</h5>
+                <h5 style={{margin: 0}}>Version - 0.60</h5>
+                <h5 style={{margin: 0}}>Dec. 2. 2019</h5>
                 <h3 style={{margin: 0}}>윤성민</h3>
                 <br/>
             </div>

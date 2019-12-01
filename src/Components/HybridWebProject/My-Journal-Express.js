@@ -3,7 +3,7 @@ import { Grid, Divider, Menu, Button } from 'semantic-ui-react';
 
 class My_Journals_Express extends Component {
     state = {
-        imgSrc: "HybridWebProject/My-Journal-Express/1.png",
+        imgSrc: "http://htsv.ipdisk.co.kr:81/list/HDD1/HybridWebProject/My-Journal-Express/1.png",
         activeItem: 1
     }
     openGithub = () => {
@@ -16,58 +16,17 @@ class My_Journals_Express extends Component {
         window.open("https://github.com/HyperTech99/My-Journal-Express/wiki/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD");
     }
     handleImg = (num) => {
-        let img1 = "HybridWebProject/My-Journal-Express/1.png";
-        let img2 = "HybridWebProject/My-Journal-Express/2.png";
-        let img3 = "HybridWebProject/My-Journal-Express/3.png";
-        let img4 = "HybridWebProject/My-Journal-Express/4.png";
-        let img5 = "HybridWebProject/My-Journal-Express/5.png";
-        let img6 = "HybridWebProject/My-Journal-Express/6.png";
-        let img7 = "HybridWebProject/My-Journal-Express/7.png";
-        switch(num){
-            case 1:
-                this.setState({
-                    imgSrc: img1,
-                    activeItem: 1
-                });
-                break;
-            case 2:
-                this.setState({
-                    imgSrc: img2,
-                    activeItem: 2
-                });
-                break;
-            case 3:
-                this.setState({
-                    imgSrc: img3,
-                    activeItem: 3
-                });
-                break;
-            case 4:
-                this.setState({
-                    imgSrc: img4,
-                    activeItem: 4
-                });
-                break;
-            case 5:
-                this.setState({
-                    imgSrc: img5,
-                    activeItem: 5
-                });
-                break;
-            case 6:
-                this.setState({
-                    imgSrc: img6,
-                    activeItem: 6
-                });
-                break;
-            case 7:
-                this.setState({
-                    imgSrc: img7,
-                    activeItem: 7
-                });
-                break;
-            default:
-        }
+        let img = [ "http://htsv.ipdisk.co.kr:81/list/HDD1/HybridWebProject/My-Journal-Express/1.png",
+        "http://htsv.ipdisk.co.kr:81/list/HDD1/HybridWebProject/My-Journal-Express/2.png",
+        "http://htsv.ipdisk.co.kr:81/list/HDD1/HybridWebProject/My-Journal-Express/3.png",
+        "http://htsv.ipdisk.co.kr:81/list/HDD1/HybridWebProject/My-Journal-Express/4.png",
+        "http://htsv.ipdisk.co.kr:81/list/HDD1/HybridWebProject/My-Journal-Express/5.png",
+        "http://htsv.ipdisk.co.kr:81/list/HDD1/HybridWebProject/My-Journal-Express/6.png",
+        "http://htsv.ipdisk.co.kr:81/list/HDD1/HybridWebProject/My-Journal-Express/7.png" ]
+        this.setState({
+            imgSrc: img[num - 1],
+            activeItem: num
+        });
     }
 
     render() { return(
@@ -105,7 +64,21 @@ class My_Journals_Express extends Component {
                         </ul>
                         <h3>최종 개발 목표</h3>
                         <p style={{margin: '0 25px'}}>
-                        현재 기본 기능들은 개발이 완료되었습니다.<br/>
+                        <b>다음과 같은 기능들은 현재 개발이 완료되었습니다.</b>
+                        </p>
+                        <ul>
+                            <li>회원가입, 탈퇴, 로그인, 로그아웃, ID/PW찾기, 회원정보 수정 기능</li>
+                            <li>사진/동영상/텍스트 작성, 수정, 삭제 기능</li>
+                            <li>저널 페이지에 컨텐츠를 마우스로 끌어서 배치하거나 이동하는 기능</li>
+                            <li>저널 페이지 이름 변경 기능</li>
+                            <li>프로필 조회 기능</li>
+                            <li>사용자간 쪽지 수발신 기능</li>
+                            <li>다른 사용자 구독 및 구독목록 기능</li>
+                            <li>다른 사용자 검색 기능</li>
+                            <li>로그아웃 상태에서 조회수/최근글 순서로 3개씩 컨텐츠를 나열해주는 기능</li>
+                            <li>기타 위의 기능들을 보조하기 위한 기능</li>
+                        </ul>
+                        <p style={{margin: '0 25px'}}>
                         <b>다음과 같은 기능들을 향후 추가할 계획입니다.</b>
                         </p>
                         <ul>
@@ -113,7 +86,7 @@ class My_Journals_Express extends Component {
                             <li>저널 배경 이미지 변경 기능</li>
                             <li>저널 페이지수 확장(현재는 사용자당 세 페이지까지만 작성가능)</li>
                             <li>배경음악 변경 기능</li>
-                            <li>등등...</li>
+                            <li>기타 필요하거나 추가하면 좋을 것 같다고 생각하는 기능</li>
                         </ul>
                         <h3>팀 프로젝트 역할 분담</h3>
                         <ul>
@@ -141,16 +114,16 @@ class My_Journals_Express extends Component {
                         </p>
                         <h3>Frontend</h3>
                         <ul>
-                            <li>순수 HTML5 + CSS3</li>
-                            <li>순수 JS + JQuery</li>
+                            <li>순수 HTML5 + CSS3 - 레이아웃 구성에 사용했습니다.</li>
+                            <li>순수 JS + JQuery - 백엔드 서버와의 연동(From 전송/데이터 수신 및 처리 등)과 사용자 조작에 동적으로 반응하기 위해 사용했습니다.</li>
                         </ul>
                         <h3>Backend</h3>
                         <ul>
-                            <li>Node.js (Express.js)</li>
+                            <li>Node.js (Express.js) - DB와 연동하여 사용자의 조작에 따라 라우팅(페이지 이동), CRUD(생성, 읽기, 갱신, 삭제), 파일 업로드 작업을 하기 위해 사용했습니다.</li>
                         </ul>
                         <h3>DB</h3>
                         <ul>
-                            <li>MySQL</li>
+                            <li>MySQL - 회원 정보, 쪽지 정보, 컨텐츠 정보 등을 저장하기 위해 사용했습니다.</li>
                         </ul>
                         <Button onClick={this.openGithub2}>DB 셋팅 정보</Button>
                         <Button onClick={this.openGithub3}>프로젝트 개발 환경 설정 방법</Button>

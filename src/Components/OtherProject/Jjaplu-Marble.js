@@ -3,17 +3,17 @@ import { Grid, Divider, Menu, Button } from 'semantic-ui-react';
 
 class Jjaplu_Marble extends Component {
     state = {
-        imgSrc: "OtherProject/Jjaplu-Marble/1.png",
+        imgSrc: "http://htsv.ipdisk.co.kr:81/list/HDD1/OtherProject/Jjaplu-Marble/1.png",
         activeItem: 1
     }
     openGithub = () => {
         window.open("https://github.com/HyperTech99/Jjaplu-Marble/");
     }
     handleImg = (num) => {
-        let img = ["OtherProject/Jjaplu-Marble/1.png",
-        "OtherProject/Jjaplu-Marble/2.png",
-        "OtherProject/Jjaplu-Marble/3.png",
-        "OtherProject/Jjaplu-Marble/4.png" ]
+        let img = ["http://htsv.ipdisk.co.kr:81/list/HDD1/OtherProject/Jjaplu-Marble/1.png",
+        "http://htsv.ipdisk.co.kr:81/list/HDD1/OtherProject/Jjaplu-Marble/2.png",
+        "http://htsv.ipdisk.co.kr:81/list/HDD1/OtherProject/Jjaplu-Marble/3.png",
+        "http://htsv.ipdisk.co.kr:81/list/HDD1/OtherProject/Jjaplu-Marble/4.png" ]
         this.setState({
             imgSrc: img[num - 1],
             activeItem: num
@@ -58,7 +58,7 @@ class Jjaplu_Marble extends Component {
                             <li>게임판, 건물 짓기 기능</li>
                             <li>주사위 굴리기 및 말 옮기기 기능</li>
                             <li>은행 기능</li>
-                            <li>등등..</li>
+                            <li>기타 위의 기능들을 보조하기 위한 기능</li>
                         </ul>
                         <p style={{margin: '0 25px'}}>
                         <b>연습용 프로젝트이므로 추가적인 개발을 할 계획은 없습니다.</b>

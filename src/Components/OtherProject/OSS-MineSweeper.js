@@ -3,18 +3,18 @@ import { Grid, Divider, Menu, Button } from 'semantic-ui-react';
 
 class OSS_MineSweeper extends Component {
     state = {
-        imgSrc: "OtherProject/OSS-MineSweeper/1.png",
+        imgSrc: "http://htsv.ipdisk.co.kr:81/list/HDD1/OtherProject/OSS-MineSweeper/1.png",
         activeItem: 1
     }
     openGithub = () => {
         window.open("https://github.com/HyperTech99/OSS-MineSweeper/");
     }
     handleImg = (num) => {
-        let img = ["OtherProject/OSS-MineSweeper/1.png",
-        "OtherProject/OSS-MineSweeper/2.png",
-        "OtherProject/OSS-MineSweeper/3.png",
-        "OtherProject/OSS-MineSweeper/4.png",
-        "OtherProject/OSS-MineSweeper/5.png" ]
+        let img = ["http://htsv.ipdisk.co.kr:81/list/HDD1/OtherProject/OSS-MineSweeper/1.png",
+        "http://htsv.ipdisk.co.kr:81/list/HDD1/OtherProject/OSS-MineSweeper/2.png",
+        "http://htsv.ipdisk.co.kr:81/list/HDD1/OtherProject/OSS-MineSweeper/3.png",
+        "http://htsv.ipdisk.co.kr:81/list/HDD1/OtherProject/OSS-MineSweeper/4.png",
+        "http://htsv.ipdisk.co.kr:81/list/HDD1/OtherProject/OSS-MineSweeper/5.png" ]
         this.setState({
             imgSrc: img[num - 1],
             activeItem: num
@@ -63,7 +63,7 @@ class OSS_MineSweeper extends Component {
                             <li>지뢰 찾기 기능</li>
                             <li>지뢰판에 메모하는 기능</li>
                             <li>지뢰판 난이도 설정 기능</li>
-                            <li>등등..</li>
+                            <li>기타 위의 기능들을 보조하기 위한 기능</li>
                         </ul>
                         <p style={{margin: '0 25px'}}>
                         <b>연습용 프로젝트이므로 추가적인 개발을 할 계획은 없습니다.</b>

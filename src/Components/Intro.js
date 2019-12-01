@@ -21,7 +21,7 @@ class Intro extends Component {
                         <h2 style={{margin: 0}}>안녕하세요</h2>
                         <h3 style={{margin: 0}}>프로그램 개발자가 되기를 지망하는 컴퓨터공학과 학부생입니다.</h3>
                         <br/>
-                        <img src='logo.png' alt='이미지 로딩 오류' style={{width: '100%' }}></img>
+                        <img src='http://htsv.ipdisk.co.kr:81/list/HDD1/logo.png' alt='이미지 로딩 오류' style={{width: '100%' }}></img>
                         <Button basic size='huge' onClick={this.openGithub} style={{width:'500px', margin: 0, color:'Navy', cursor:'pointer'}}>Github: HyperTech99</Button>
                     </Grid.Column>
                     <Grid.Column className='grid_block' style={{textAlign: 'center', backgroundColor: 'SkyBlue'}}>

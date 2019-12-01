@@ -3,17 +3,17 @@ import { Grid, Divider, Menu, Button } from 'semantic-ui-react';
 
 class Jjapke_Mon extends Component {
     state = {
-        imgSrc: "OtherProject/Jjapke-Mon/1.png",
+        imgSrc: "http://htsv.ipdisk.co.kr:81/list/HDD1/OtherProject/Jjapke-Mon/1.png",
         activeItem: 1
     }
     openGithub = () => {
         window.open("https://github.com/HyperTech99/Jjapke-Mon/");
     }
     handleImg = (num) => {
-        let img = ["OtherProject/Jjapke-Mon/1.png",
-        "OtherProject/Jjapke-Mon/2.png",
-        "OtherProject/Jjapke-Mon/3.png",
-        "OtherProject/Jjapke-Mon/4.png" ]
+        let img = ["http://htsv.ipdisk.co.kr:81/list/HDD1/OtherProject/Jjapke-Mon/1.png",
+        "http://htsv.ipdisk.co.kr:81/list/HDD1/OtherProject/Jjapke-Mon/2.png",
+        "http://htsv.ipdisk.co.kr:81/list/HDD1/OtherProject/Jjapke-Mon/3.png",
+        "http://htsv.ipdisk.co.kr:81/list/HDD1/OtherProject/Jjapke-Mon/4.png" ]
         this.setState({
             imgSrc: img[num - 1],
             activeItem: num
@@ -54,7 +54,7 @@ class Jjapke_Mon extends Component {
                             <li>포켓몬 스킬 사용 기능</li>
                             <li>플레이어 프로필 기능</li>
                             <li>플레이어 통계 기능 (통계 기능으로 생성된 통계가 다음 게임에 영향을 줌)</li>
-                            <li>등등..</li>
+                            <li>기타 위의 기능들을 보조하기 위한 기능</li>
                         </ul>
                         <p style={{margin: '0 25px'}}>
                         <b>연습용 프로젝트이므로 추가적인 개발을 할 계획은 없습니다.</b>

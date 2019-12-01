@@ -40,7 +40,15 @@ class HyperTech99s_Page extends Component {
                         </ul>
                         <h3>최종 개발 목표</h3>
                         <p style={{margin: '0 25px'}}>
-                        현재 기본 기능들은 개발이 완료되었습니다.<br/>
+                        <b>다음과 같은 기능들은 현재 개발이 완료되었습니다.</b>
+                        </p>
+                        <ul>
+                            <li>좌측 사이드바를 이용한 페이지 전환 기능</li>
+                            <li>각 페이지에서 프로젝트 정보, 개인 프로필 내용 등을 보여주는 기능</li>
+                            <li>GitHub에서 해당하는 페이지로 이동할 수 있는 기능</li>
+                            <li>FTP 서버로 이동할 수 있는 기능</li>
+                        </ul>
+                        <p style={{margin: '0 25px'}}>
                         <b>다음과 같은 기능, 구현들을 향후 추가할 계획입니다.</b>
                         </p>
                         <ul>
@@ -60,18 +68,14 @@ class HyperTech99s_Page extends Component {
                         </p>
                         <h3>Frontend</h3>
                         <ul>
-                            <li>React.js (Modern Web Library/FrameWork)</li>
-                            <li>Semantic UI React (Design Library)</li>
+                            <li>React.js (Modern Web Library/FrameWork) - 레이아웃 및 사용자의 조작에 따른 화면 전환 기능을 구현하는 데 사용했습니다.</li>
+                            <li>Semantic UI React (Design Library) - UI 레이아웃을 구현하는 데 사용했습니다.</li>
                         </ul>
                         <h3>Backend</h3>
                         <ul>
-                            <li>아직은 백엔드가 필요없는 수준이지만, 추후에는..</li>
-                            <li>어떤 백엔드 프레임워크를 사용할지 고민하는 중입니다...!</li>
-                            <li>음.. 일단 ASP, JSP, PHP는 좀 오래된 것 같습니다.</li>
-                            <li>단순한 개인 홈페이지 용도로 JAVA Spring은 너무 무거울 것 같고요,</li>
-                            <li>Ruby On Rails는... 왠지 안끌리네요. <del>이시국씨가 곧 등판하실 예정입니다.</del></li>
-                            <li>아마도... 파이썬의 웹 백엔드 프레임워크 중 하나를 이용해 보거나,</li>
-                            <li>그냥 익숙한 Node.js의 Express.js를 채택하게 될 것 같습니다.</li>
+                            <li>아직은 백엔드가 필요없는 수준이지만, 추후에 어떤 백엔드 프레임워크를 사용할지 고민하는 중입니다.</li>
+                            <li>파이썬의 웹 백엔드 프레임워크 중 하나를 이용해 보거나,</li>
+                            <li>익숙한 Node.js의 Express.js를 채택하게 될 것 같습니다.</li>
                         </ul>
                         <h3>DB</h3>
                         <ul>
@@ -82,7 +86,7 @@ class HyperTech99s_Page extends Component {
                     </Grid.Column>
                     <Grid.Column className='grid_block'>
                         <h2>프로젝트 스크린-샷</h2>
-                        <p>본 페이지가 바로 이 프로젝트로 만들어졌으니.. 직접 둘러보시면 될 것 같습니다!</p>
+                        <p>본 페이지가 바로 이 프로젝트로 만들어졌으니, 직접 둘러보시면 될 것 같습니다.</p>
                     </Grid.Column>
                 </Grid>
             </div>

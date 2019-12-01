@@ -3,7 +3,7 @@ import { Grid, Divider, Menu, Button } from 'semantic-ui-react';
 
 class DK_Zone extends Component {
     state = {
-        imgSrc: "HybridWebProject/DK-Zone/1.png",
+        imgSrc: "http://htsv.ipdisk.co.kr:81/list/HDD1/HybridWebProject/DK-Zone/1.png",
         activeItem: 1
     }
     openGithub = () => {
@@ -16,16 +16,16 @@ class DK_Zone extends Component {
         window.open("https://github.com/HyperTech99/DK-Zone/wiki/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD");
     }
     handleImg = (num) => {
-        let img = ["HybridWebProject/DK-Zone/1.png",
-        "HybridWebProject/DK-Zone/2.png",
-        "HybridWebProject/DK-Zone/3.png",
-        "HybridWebProject/DK-Zone/4.png",
-        "HybridWebProject/DK-Zone/5.png",
-        "HybridWebProject/DK-Zone/6.png",
-        "HybridWebProject/DK-Zone/7.png",
-        "HybridWebProject/DK-Zone/8.png",
-        "HybridWebProject/DK-Zone/9.png",
-        "HybridWebProject/DK-Zone/10.png" ]
+        let img = ["http://htsv.ipdisk.co.kr:81/list/HDD1/HybridWebProject/DK-Zone/1.png",
+        "http://htsv.ipdisk.co.kr:81/list/HDD1/HybridWebProject/DK-Zone/2.png",
+        "http://htsv.ipdisk.co.kr:81/list/HDD1/HybridWebProject/DK-Zone/3.png",
+        "http://htsv.ipdisk.co.kr:81/list/HDD1/HybridWebProject/DK-Zone/4.png",
+        "http://htsv.ipdisk.co.kr:81/list/HDD1/HybridWebProject/DK-Zone/5.png",
+        "http://htsv.ipdisk.co.kr:81/list/HDD1/HybridWebProject/DK-Zone/6.png",
+        "http://htsv.ipdisk.co.kr:81/list/HDD1/HybridWebProject/DK-Zone/7.png",
+        "http://htsv.ipdisk.co.kr:81/list/HDD1/HybridWebProject/DK-Zone/8.png",
+        "http://htsv.ipdisk.co.kr:81/list/HDD1/HybridWebProject/DK-Zone/9.png",
+        "http://htsv.ipdisk.co.kr:81/list/HDD1/HybridWebProject/DK-Zone/10.png" ]
         this.setState({
             imgSrc: img[num - 1],
             activeItem: num
@@ -65,7 +65,21 @@ class DK_Zone extends Component {
                         </ul>
                         <h3>최종 개발 목표</h3>
                         <p style={{margin: '0 25px'}}>
-                        현재 기본 기능들은 개발이 완료되었습니다.<br/>
+                        <b>다음과 같은 기능들은 현재 개발이 완료되었습니다.</b>
+                        </p>
+                        <ul>
+                            <li>회원가입, 탈퇴, 로그인, 로그아웃, ID/PW찾기, 회원정보 수정 기능</li>
+                            <li>사진/동영상/텍스트/태그를 포함한 게시물 작성, 수정, 삭제 기능</li>
+                            <li>저널 페이지 이름 변경 기능</li>
+                            <li>프로필 조회 및 수정 기능</li>
+                            <li>사용자간 쪽지 수발신 기능</li>
+                            <li>다른 사용자 친구 추가 및 친구목록 관리 기능</li>
+                            <li>다른 사용자가 작성한 게시물을 검색하는 기능</li>
+                            <li>최근 전시장에서 진행되는 취미 관련 전시회들을 보여주는 기능 (제한적)</li>
+                            <li>최근 이슈가 되고 있는 취미 관련 기사, 포스트를 보여주는 기능 (제한적)</li>
+                            <li>기타 위의 기능들을 보조하기 위한 기능</li>
+                        </ul>
+                        <p style={{margin: '0 25px'}}>
                         <b>다음과 같은 기능들을 향후 추가할 계획입니다.</b>
                         </p>
                         <ul>
@@ -73,7 +87,7 @@ class DK_Zone extends Component {
                             <li>'덕후존' 형태 지정 기능</li>
                             <li>상세검색 기능</li>
                             <li>친구로 추가되지 않은 사용자에게 쪽지를 보낼 수 있는 기능</li>
-                            <li>등등...</li>
+                            <li>기타 필요하거나 추가하면 좋을 것 같다고 생각하는 기능</li>
                         </ul>
                         <h3>부속 프로젝트 - [DK-Zone-Mobile]</h3>
                         <p style={{margin: '0 25px'}}>
@@ -97,16 +111,16 @@ class DK_Zone extends Component {
                         </p>
                         <h3>Frontend</h3>
                         <ul>
-                            <li>Vue.js (Modern Web FrameWork)</li>
-                            <li>Vuetify (Design Library)</li>
+                            <li>Vue.js (Modern Web FrameWork) - 레이아웃 구성 및 백엔드 서버와의 연동(From 전송/데이터 수신 및 처리 등)과 사용자 조작에 동적으로 반응하기 위해 사용했습니다.</li>
+                            <li>Vuetify (Design Library) - UI 레이아웃을 구현하고 모바일과 공용하여 사용할 수 있을 정도로 적극적인 반응형을 지원하는 데 사용했습니다.</li>
                         </ul>
                         <h3>Backend</h3>
                         <ul>
-                            <li>Node.js (Express.js)</li>
+                            <li>Node.js (Express.js) - DB와 연동하여 사용자의 조작에 따라 CRUD(생성, 읽기, 갱신, 삭제), 파일 업로드 작업을 하기 위해 사용했습니다.</li>
                         </ul>
                         <h3>DB</h3>
                         <ul>
-                            <li>MySQL</li>
+                            <li>MySQL - 회원 정보, 친구 정보, 쪽지 정보, 컨텐츠 정보 등을 저장하기 위해 사용했습니다.</li>
                         </ul>
                         <Button onClick={this.openGithub2}>DB 셋팅 정보</Button>
                         <Button onClick={this.openGithub3}>프로젝트 개발 환경 설정 방법</Button>

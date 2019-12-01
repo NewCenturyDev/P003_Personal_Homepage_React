@@ -3,37 +3,20 @@ import { Grid, Divider, Menu, Button } from 'semantic-ui-react';
 
 class SCP_School extends Component {
     state = {
-        imgSrc: "HybridWebProject/SCP-School/1.png",
+        imgSrc: "http://htsv.ipdisk.co.kr:81/list/HDD1/HybridWebProject/SCP-School/1.png",
         activeItem: 1
     }
     openGithub = () => {
         window.open("https://github.com/HyperTech99/SCP-School");
     }
     handleImg = (num) => {
-        let img1 = "HybridWebProject/SCP-School/1.png";
-        let img2 = "HybridWebProject/SCP-School/2.png";
-        let img3 = "HybridWebProject/SCP-School/3.png";
-        switch(num){
-            case 1:
-                this.setState({
-                    imgSrc: img1,
-                    activeItem: 1
-                });
-                break;
-            case 2:
-                this.setState({
-                    imgSrc: img2,
-                    activeItem: 2
-                });
-                break;
-            case 3:
-                this.setState({
-                    imgSrc: img3,
-                    activeItem: 3
-                });
-                break;
-            default:
-        }
+        let img = [ "http://htsv.ipdisk.co.kr:81/list/HDD1/HybridWebProject/SCP-School/1.png",
+        "http://htsv.ipdisk.co.kr:81/list/HDD1/HybridWebProject/SCP-School/2.png",
+        "http://htsv.ipdisk.co.kr:81/list/HDD1/HybridWebProject/SCP-School/3.png"]
+        this.setState({
+            imgSrc: img[num - 1],
+            activeItem: num
+        });
     }
 
     render() { return(
@@ -77,8 +60,8 @@ class SCP_School extends Component {
                         </p>
                         <h3>Frontend</h3>
                         <ul>
-                            <li>순수 HTML5 + CSS3</li>
-                            <li>순수 JS + JQuery</li>
+                            <li>순수 HTML5 + CSS3 - 프론트엔드 UI 레이아웃 구현에 사용</li>
+                            <li>순수 JS + JQuery - 일부 동적인 처리가 필요한 부분에 사용</li>
                         </ul>
                         <h3>Backend</h3>
                         <ul>
@@ -109,7 +92,7 @@ class SCP_School extends Component {
                             <li>마지막으로, 이 프로젝트의 타겟인 학과의 1학년 후배들은 본 프로젝트가 활성화, 상용화되기 보다는
                                 그냥 자신들이 구글링하는 것을 더 선호하였음.
                             </li>
-                            <li><del>한줄요약: 레이아웃 구현해놓고 보니 기획이 망했어요.</del></li>
+                            <li><del>한줄요약: 레이아웃 구현해놓고 보니 기획 아이디어가 별로 좋지 않았던 것 같습니다.</del></li>
                         </ul>
                     </Grid.Column>
                     <Grid.Column className='grid_block'>
