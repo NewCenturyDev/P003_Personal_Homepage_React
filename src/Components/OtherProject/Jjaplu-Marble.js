@@ -30,26 +30,21 @@ class Jjaplu_Marble extends Component {
                         <Button onClick={this.openGithub}>GitHub : HyperTech99/Jjaplu-Marble</Button>
                     </Grid.Column>
                     <Grid.Column className='grid_block'>
-                        <h2>프로젝트 개요</h2>
+                        <h2>프로젝트 기술 스택</h2>
                         <Divider></Divider>
-                        <h3>프로젝트 참여자</h3>
-                        <ul>
-                            <li><h3>팀 프로젝트</h3></li>
-                            <li>HyperTech99 (본인)</li>
-                            <li>Wwwoong</li>
-                        </ul>
-                        <h3>개발 배경</h3>
+                        <h3>개요</h3>
                         <p style={{margin: '0 25px'}}>
-                        JAVA 수업을 들으며 JAVA 프로그래밍에 익숙해지기 위해서 이 프로젝트를 만들었습니다.<br/>
-                        어린 시절 즐겼던 블루마블 게임을 구현하였습니다. 연습용으로 진행한 프로젝트이긴 하지만
-                        어느정도의 디테일을 위해 Swing GUI를 사용하여 분위기를 냈습니다.<br/>
-                        
+                            간단한 JAVA 기반의 Swing API를 사용한 GUI Application 입니다.
                         </p>
-                        <h3>개발 컨셉</h3>
-                        <ul>
-                            <li>연습 - JAVA 프로그래밍 및 문법, 디자인 패턴 연습</li>
-                        </ul>
-                        <h3>최종 개발 목표</h3>
+                    </Grid.Column>
+                    <Grid.Column className='grid_block'>
+                        <h2>프로젝트 구현</h2>
+                        <Divider></Divider>
+                        <h3>구현 내용 개요</h3>
+                        <p style={{margin: '0 25px'}}>
+                        <b>Swing GUI를 이용한 간단한 블루마블 보드게임</b>
+                        </p>
+                        <h3>구현 완료 내용</h3>
                         <p style={{margin: '0 25px'}}>
                         <b>다음과 같은 주요 기능은 개발이 완료되었습니다.</b>
                         </p>
@@ -60,16 +55,29 @@ class Jjaplu_Marble extends Component {
                             <li>은행 기능</li>
                             <li>기타 위의 기능들을 보조하기 위한 기능</li>
                         </ul>
+                        <h3>최종 개발 목표</h3>
                         <p style={{margin: '0 25px'}}>
                         <b>연습용 프로젝트이므로 추가적인 개발을 할 계획은 없습니다.</b>
                         </p>
                     </Grid.Column>
                     <Grid.Column className='grid_block'>
-                        <h2>프로젝트 기술 스택</h2>
+                        <h2>프로젝트 기획</h2>
                         <Divider></Divider>
-                        <h3>개요</h3>
+                        <h3>프로젝트 참여자</h3>
+                        <ul>
+                            <li><h3>팀 프로젝트</h3></li>
+                            <li>HyperTech99 (본인)</li>
+                            <li>Wwwoong</li>
+                        </ul>
+                        <h3>개발 컨셉</h3>
+                        <ul>
+                            <li>연습 - JAVA 프로그래밍 및 문법, 디자인 패턴 연습</li>
+                        </ul>
+                        <h3>개발 배경</h3>
                         <p style={{margin: '0 25px'}}>
-                            간단한 JAVA 기반의 Swing API를 사용한 GUI Application 입니다.
+                        JAVA 수업을 들으며 JAVA 프로그래밍에 익숙해지기 위해서 이 프로젝트를 만들었습니다.<br/>
+                        어린 시절 즐겼던 블루마블 게임을 구현하였습니다. 연습용으로 진행한 프로젝트이긴 하지만
+                        어느정도의 디테일을 위해 Swing GUI를 사용하여 분위기를 냈습니다.<br/>
                         </p>
                     </Grid.Column>
                     <Grid.Column className='grid_block'>

@@ -25,10 +25,8 @@ class Intro extends Component {
                         <Button basic size='huge' onClick={this.openGithub} style={{width:'500px', margin: 0, color:'Navy', cursor:'pointer'}}>Github: HyperTech99</Button>
                     </Grid.Column>
                     <Grid.Column className='grid_block' style={{textAlign: 'center', backgroundColor: 'SkyBlue'}}>
-                        <h3 style={{margin: 0}}>현재 병특 개발자를 꿈꾸고 있습니다..</h3>
-                        <h3 style={{margin: 0}}>보충역 IT 산업기능요원을 받아주실 수 있는 산업체를 매우 절실히 구하고 있습니다..</h3>
-                        <h3 style={{margin: 0}}>부디 한 청년의 꿈을 이뤄주세요..!</h3>
-                        
+                        <h3 style={{margin: 0}}>현재 병특 개발자를 꿈꾸고 있습니다.</h3>
+                        <h3 style={{margin: 0}}>보충역 IT 산업기능요원을 받아주실 수 있는 산업체를 구하고 있습니다.</h3>
                     </Grid.Column>
                 </Grid>
                 <h2 style={{margin: 0, textAlign: 'center', marginTop: 30}}>최근 진행중인 프로젝트들</h2>
